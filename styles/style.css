@@ -1,0 +1,63 @@
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --width: 840px;
+}
+
+header {
+    background-color: aqua;
+    display: grid;
+    grid-template-rows: 100px;
+    justify-content: center;
+    border: dashed;
+    height: 30vh;
+    width: var(--width);
+}
+
+.all_elements {
+    display: flex;
+    /* gap: 5px; */
+    width: 840px;
+
+}
+
+main {
+    background-color: red;
+    display: grid;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: 630px; /*had to use screen to measure*/
+    justify-content: center;
+    /* row-gap: 20px; */
+    text-align: center;
+    border: dashed;
+}
+
+aside {
+    /* align-items: center;  */ /*for vertical*/
+
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: 200px;
+    /* justify-content: center; */
+    border: dashed;
+    height: 100vh;
+    text-align: center;
+}
+
+footer {
+    background-color: blue;
+    display: grid;
+    grid-template-rows: 100px;
+    justify-content: center;
+    border: dashed;
+    height: 20vh;
+    /* width:fit-content; */
+    /* width: 840px; */
+    width: var(--width);
+}
